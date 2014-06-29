@@ -90,6 +90,7 @@ def slackers():
         if total_hours < 20:
             print employee.getName(), "only worked for", total_hours, "hours!"
 
-indiv_payroll()
-expense_breakdown()
-slackers()
+if __name__ == '__main__':
+    indiv_payroll()
+    expense_breakdown()
+    slackers()
