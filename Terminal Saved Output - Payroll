@@ -1,0 +1,511 @@
+Last login: Tue Jun 24 16:49:42 on ttys000
+anniekramer-mbp:~ anniekramer$ cd Desktop
+anniekramer-mbp:Desktop anniekramer$ cd payrol
+-bash: cd: payrol: No such file or directory
+anniekramer-mbp:Desktop anniekramer$ cd payroll
+anniekramer-mbp:payroll anniekramer$ ls
+payroll.py	payroll.txt
+anniekramer-mbp:payroll anniekramer$ python payroll.py
+  File "payroll.py", line 33
+    def classify_hours 
+                      ^
+SyntaxError: invalid syntax
+anniekramer-mbp:payroll anniekramer$ python payroll.py
+  File "payroll.py", line 35
+    def calculate_payroll(hours, rate):
+      ^
+IndentationError: expected an indented block
+anniekramer-mbp:payroll anniekramer$ python payroll.py
+  File "payroll.py", line 33
+    def calculate_payroll(hours, rate):
+      ^
+IndentationError: expected an indented block
+anniekramer-mbp:payroll anniekramer$ python payroll.py
+annie
+teacher
+55
+Traceback (most recent call last):
+  File "payroll.py", line 29, in <module>
+    f = open(filename, 'r')
+NameError: name 'filename' is not defined
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+Traceback (most recent call last):
+  File "payroll.py", line 29, in <module>
+    f = open(filename, 'r')
+NameError: name 'filename' is not defined
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+Traceback (most recent call last):
+  File "payroll.py", line 29, in <module>
+    f = open('filename', 'r')
+IOError: [Errno 2] No such file or directory: 'filename'
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+Traceback (most recent call last):
+  File "payroll.py", line 27, in <module>
+    f = open('filename', 'r')
+IOError: [Errno 2] No such file or directory: 'filename'
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+Traceback (most recent call last):
+  File "payroll.py", line 34, in <module>
+    f = open(filename, 'r')
+NameError: name 'filename' is not defined
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+Traceback (most recent call last):
+  File "payroll.py", line 34, in <module>
+    f = open('filename', 'r')
+IOError: [Errno 2] No such file or directory: 'filename'
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+  File "payroll.py", line 32
+    reg_hours = 40 and ovt_hours = 0
+SyntaxError: can't assign to operator
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+Traceback (most recent call last):
+  File "payroll.py", line 36, in <module>
+    f = open(filename, 'r')
+NameError: name 'filename' is not defined
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+['David', 'Teacher', '25', ':', '4', '5', '3', '2', '2', '0', '0']
+['Annie', 'Programmer', '40', ':', '7', '7', '9', '8', '5', '1', '1']
+['Tom', 'Programmer', '43', ':', '9', '9', '9', '10', '7', '5', '0']
+['Ryan', 'Teacher', '55', ':', '10', '9', '11', '9', '6', '3', '3']
+['Deats', 'Programmer', '40', ':', '8', '7', '9', '8', '5', '0', '4']
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+Traceback (most recent call last):
+  File "payroll.py", line 34, in <module>
+    print line.split(0)
+TypeError: expected a character buffer object
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+David
+Annie
+Tom
+Ryan
+Deats
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+  File "payroll.py", line 36
+    print emp_info = line.split()
+                   ^
+SyntaxError: invalid syntax
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+['David', 'Teacher', '25', ':', '4', '5', '3', '2', '2', '0', '0']
+['David', 'Teacher', '25', ':', '4', '5', '3', '2', '2', '0', '0']
+['Annie', 'Programmer', '40', ':', '7', '7', '9', '8', '5', '1', '1']
+['Annie', 'Programmer', '40', ':', '7', '7', '9', '8', '5', '1', '1']
+['Tom', 'Programmer', '43', ':', '9', '9', '9', '10', '7', '5', '0']
+['Tom', 'Programmer', '43', ':', '9', '9', '9', '10', '7', '5', '0']
+['Ryan', 'Teacher', '55', ':', '10', '9', '11', '9', '6', '3', '3']
+['Ryan', 'Teacher', '55', ':', '10', '9', '11', '9', '6', '3', '3']
+['Deats', 'Programmer', '40', ':', '8', '7', '9', '8', '5', '0', '4']
+['Deats', 'Programmer', '40', ':', '8', '7', '9', '8', '5', '0', '4']
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+annie
+teacher
+55
+['David', 'Teacher', '25', ':', '4', '5', '3', '2', '2', '0', '0']
+['Annie', 'Programmer', '40', ':', '7', '7', '9', '8', '5', '1', '1']
+['Tom', 'Programmer', '43', ':', '9', '9', '9', '10', '7', '5', '0']
+['Ryan', 'Teacher', '55', ':', '10', '9', '11', '9', '6', '3', '3']
+['Deats', 'Programmer', '40', ':', '8', '7', '9', '8', '5', '0', '4']
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+  File "payroll.py", line 47
+    [4:]
+      ^
+SyntaxError: invalid syntax
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+  File "payroll.py", line 47
+    [4:]
+      ^
+SyntaxError: invalid syntax
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+Traceback (most recent call last):
+  File "payroll.py", line 27, in <module>
+    annie = Person("annie", "programmer", "40")
+TypeError: __init__() takes exactly 5 arguments (4 given)
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+['David', 'Teacher', '25', ':', '4', '5', '3', '2', '2', '0', '0']
+['Annie', 'Programmer', '40', ':', '7', '7', '9', '8', '5', '1', '1']
+['Tom', 'Programmer', '43', ':', '9', '9', '9', '10', '7', '5', '0']
+['Ryan', 'Teacher', '55', ':', '10', '9', '11', '9', '6', '3', '3']
+['Deats', 'Programmer', '40', ':', '8', '7', '9', '8', '5', '0', '4']
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+['David', 'Teacher', '25', ':', '4', '5', '3', '2', '2', '0', '0']
+['Annie', 'Programmer', '40', ':', '7', '7', '9', '8', '5', '1', '1']
+['Tom', 'Programmer', '43', ':', '9', '9', '9', '10', '7', '5', '0']
+['Ryan', 'Teacher', '55', ':', '10', '9', '11', '9', '6', '3', '3']
+['Deats', 'Programmer', '40', ':', '8', '7', '9', '8', '5', '0', '4']
+[['David', 'Teacher', '25', ':', '4', '5', '3', '2', '2', '0', '0'], ['Annie', 'Programmer', '40', ':', '7', '7', '9', '8', '5', '1', '1'], ['Tom', 'Programmer', '43', ':', '9', '9', '9', '10', '7', '5', '0'], ['Ryan', 'Teacher', '55', ':', '10', '9', '11', '9', '6', '3', '3'], ['Deats', 'Programmer', '40', ':', '8', '7', '9', '8', '5', '0', '4']]
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[['David', 'Teacher', '25', ':', '4', '5', '3', '2', '2', '0', '0'], ['Annie', 'Programmer', '40', ':', '7', '7', '9', '8', '5', '1', '1'], ['Tom', 'Programmer', '43', ':', '9', '9', '9', '10', '7', '5', '0'], ['Ryan', 'Teacher', '55', ':', '10', '9', '11', '9', '6', '3', '3'], ['Deats', 'Programmer', '40', ':', '8', '7', '9', '8', '5', '0', '4']]
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+Traceback (most recent call last):
+  File "payroll.py", line 37, in <module>
+    hours = sum(emp_info[4:10])
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+Traceback (most recent call last):
+  File "payroll.py", line 38, in <module>
+    hours_per_day = float(emp_info[4:10])
+TypeError: float() argument must be a string or a number
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+Traceback (most recent call last):
+  File "payroll.py", line 38, in <module>
+    hours_per_day = float(emp_info[4:10])
+TypeError: float() argument must be a string or a number
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+['4', '5', '3', '2', '2', '0']
+Traceback (most recent call last):
+  File "payroll.py", line 45, in <module>
+    emplyees.append(new_employee)
+NameError: name 'emplyees' is not defined
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+['4', '5', '3', '2', '2', '0']
+['7', '7', '9', '8', '5', '1']
+['9', '9', '9', '10', '7', '5']
+['10', '9', '11', '9', '6', '3']
+['8', '7', '9', '8', '5', '0']
+[<__main__.Person object at 0x1005a50d0>, <__main__.Person object at 0x1005a5110>, <__main__.Person object at 0x1005a5150>, <__main__.Person object at 0x1005a5190>, <__main__.Person object at 0x1005a51d0>]
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+[<__main__.Person object at 0x1006a50d0>, <__main__.Person object at 0x1006a5150>, <__main__.Person object at 0x1006a5190>, <__main__.Person object at 0x1006a51d0>, <__main__.Person object at 0x1006a5210>]
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+[<__main__.Person object at 0x1005a50d0>, <__main__.Person object at 0x1005a5150>, <__main__.Person object at 0x1005a5190>, <__main__.Person object at 0x1005a51d0>, <__main__.Person object at 0x1005a5210>]
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+<__main__.Person object at 0x1006a50d0>
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+<__main__.Person object at 0x1006a5150>
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+<__main__.Person object at 0x1006a5190>
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+<__main__.Person object at 0x1006a51d0>
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+<__main__.Person object at 0x1006a5210>
+[<__main__.Person object at 0x1006a50d0>, <__main__.Person object at 0x1006a5150>, <__main__.Person object at 0x1006a5190>, <__main__.Person object at 0x1006a51d0>, <__main__.Person object at 0x1006a5210>]
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+Traceback (most recent call last):
+  File "payroll.py", line 46, in <module>
+    print new_employee.hours_total
+AttributeError: 'Person' object has no attribute 'hours_total'
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+David
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+Annie
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+Tom
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+Ryan
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+Deats
+[<__main__.Person object at 0x1006a50d0>, <__main__.Person object at 0x1006a5150>, <__main__.Person object at 0x1006a5190>, <__main__.Person object at 0x1006a51d0>, <__main__.Person object at 0x1006a5210>]
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+<bound method Person.getName of <__main__.Person object at 0x1006a50d0>>
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+<bound method Person.getName of <__main__.Person object at 0x1006a5150>>
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+<bound method Person.getName of <__main__.Person object at 0x1006a5190>>
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+<bound method Person.getName of <__main__.Person object at 0x1006a51d0>>
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+<bound method Person.getName of <__main__.Person object at 0x1006a5210>>
+[<__main__.Person object at 0x1006a50d0>, <__main__.Person object at 0x1006a5150>, <__main__.Person object at 0x1006a5190>, <__main__.Person object at 0x1006a51d0>, <__main__.Person object at 0x1006a5210>]
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+David
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+Annie
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+Tom
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+Ryan
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+Deats
+[<__main__.Person object at 0x1006a50d0>, <__main__.Person object at 0x1006a5150>, <__main__.Person object at 0x1006a5190>, <__main__.Person object at 0x1006a51d0>, <__main__.Person object at 0x1006a5210>]
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+<__main__.Person object at 0x1006a50d0>
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+<__main__.Person object at 0x1006a5150>
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+<__main__.Person object at 0x1006a5190>
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+<__main__.Person object at 0x1006a51d0>
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+<__main__.Person object at 0x1006a5210>
+[<__main__.Person object at 0x1006a50d0>, <__main__.Person object at 0x1006a5150>, <__main__.Person object at 0x1006a5190>, <__main__.Person object at 0x1006a51d0>, <__main__.Person object at 0x1006a5210>]
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+David
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+Annie
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+Tom
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+Ryan
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+Deats
+[<__main__.Person object at 0x1005a50d0>, <__main__.Person object at 0x1005a5150>, <__main__.Person object at 0x1005a5190>, <__main__.Person object at 0x1005a51d0>, <__main__.Person object at 0x1005a5210>]
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+David
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+Annie
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+Tom
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+Ryan
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+Deats
+[<__main__.Person object at 0x1005a50d0>, <__main__.Person object at 0x1005a5150>, <__main__.Person object at 0x1005a5190>, <__main__.Person object at 0x1005a51d0>, <__main__.Person object at 0x1005a5210>]
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+David
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+Annie
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+Tom
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+Ryan
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+Deats
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+16.0
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+37.0
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+49.0
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+48.0
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+37.0
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+16.0
+Traceback (most recent call last):
+  File "payroll.py", line 50, in <module>
+    print hours[2]
+IndexError: list index out of range
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+David
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+Annie
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+Tom
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+Ryan
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+Deats
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+David :
+	Title: Teacher
+	Wage: 25
+Annie :
+	Title: Programmer
+	Wage: 40
+Tom :
+	Title: Programmer
+	Wage: 43
+Ryan :
+	Title: Teacher
+	Wage: 55
+Deats :
+	Title: Programmer
+	Wage: 40
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+David :
+	Title: Teacher
+	Wage: 25
+	Hours Worked:
+Traceback (most recent call last):
+  File "payroll.py", line 54, in <module>
+    print '\tHours Worked:', employee.gethours_worked()
+AttributeError: 'Person' object has no attribute 'gethours_worked'
+anniekramer-mbp:payroll anniekramer$ python payroll.py payroll.txt
+[4.0, 5.0, 3.0, 2.0, 2.0, 0.0]
+16.0
+[7.0, 7.0, 9.0, 8.0, 5.0, 1.0]
+37.0
+[9.0, 9.0, 9.0, 10.0, 7.0, 5.0]
+49.0
+[10.0, 9.0, 11.0, 9.0, 6.0, 3.0]
+48.0
+[8.0, 7.0, 9.0, 8.0, 5.0, 0.0]
+37.0
+David :
+	Title: Teacher
+	Wage: 25
+	Hours Worked: 16.0
+Annie :
+	Title: Programmer
+	Wage: 40
+	Hours Worked: 37.0
+Tom :
+	Title: Programmer
+	Wage: 43
+	Hours Worked: 49.0
+Ryan :
+	Title: Teacher
+	Wage: 55
+	Hours Worked: 48.0
+Deats :
+	Title: Programmer
+	Wage: 40
+	Hours Worked: 37.0
+anniekramer-mbp:payroll anniekramer$ git init
+Reinitialized existing Git repository in /Users/anniekramer/Desktop/payroll/.git/
+anniekramer-mbp:payroll anniekramer$ git add .
+anniekramer-mbp:payroll anniekramer$ git commit -m "Added employees array"
+[master 1148969] Added employees array
+ 2 files changed, 70 insertions(+), 27 deletions(-)
+ rewrite payroll.py (61%)
+anniekramer-mbp:payroll anniekramer$ git push -u origin master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 944 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+To https://github.com/goingglacial/payroll_program.git
+   596423f..1148969  master -> master
+Branch master set up to track remote branch master from origin.
+anniekramer-mbp:payroll anniekramer$ 
