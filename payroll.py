@@ -1,9 +1,12 @@
 import sys
 import os.path
 
+# CR: Pull lines dealing with reading/parsing file into own function
 script, filename = sys.argv
 f = open(filename, 'r')
 
+# CR: Get rid of get* methods, and use the fields directly. Getters
+# are not Pythonic.
 class Person(object):
 
     def __init__(self, name, title, wage, weekday_hours, weekend_hours):
@@ -28,6 +31,7 @@ class Person(object):
     def getWeekendHours(self):
         return self.weekend_hours
 
+# CR: Pull this into the function that parses the file and returns a list of employees
 employees = []
 
 for line in f.readlines():
@@ -39,6 +43,8 @@ for line in f.readlines():
     title = emp_info[1]
     wage = emp_info[2]
 
+    # CR: Separate out the part that builds the list from the part that prints it,
+    # since those are logically two separate things.
     weekday_hours = [float(h) for h in emp_info[4:9]]
     print weekday_hours
     weekend_hours = [float(h) for h in emp_info[9:]]
@@ -51,6 +57,7 @@ for line in f.readlines():
 
 f.close()
 
+# CR: Pull into its own function
 for employee in employees:
     print employee.getName(),':'
     print '\tTitle:', employee.getTitle()
@@ -58,8 +65,11 @@ for employee in employees:
     print '\tWeekday Hours:', employee.getWeekdayHours()
     print '\tWeekend Hours:', employee.getWeekendHours()
 
+# CR: Same here
 expenses_by_profession = {'Programmer': 0, 'Teacher': 0}
 
+# CR: References to employees or expenses_by_profession should be
+# turned into parameter references so we can use the functions in isolation.
 def indiv_payroll():
     print "===Payroll==="
     for employee in employees:
@@ -76,6 +86,7 @@ def indiv_payroll():
 
         expenses_by_profession[employee.getTitle()] += total_pay
 
+# CR: Put verbs in your function names
 def expense_breakdown():
     print "===Expense Breakdown==="
     total_emp_pay = sum(expenses_by_profession.values())
@@ -91,6 +102,10 @@ def slackers():
             print employee.getName(), "only worked for", total_hours, "hours!"
 
 if __name__ == '__main__':
+    # The main should be a bit mroe involved, I think. I think ideally you want
+    # to break up the functionality a bit more into different functions as I've
+    # outlined above, and the main's job is to read the args and coordinate the
+    # dance between all the appropriate functions.
     indiv_payroll()
     expense_breakdown()
     slackers()
